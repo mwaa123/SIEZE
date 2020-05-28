@@ -57,7 +57,7 @@ html, body {
     background-repeat: repeat;
     z-index: 2;
   }
-  /* #dot:before {
+  #dot:before {
     content: "";
     position: absolute;
     height: 200px;
@@ -114,7 +114,7 @@ html, body {
     width: 80px;
     top: 500px;
     left: -145px;
-  } */
+  }
   /* Keyframes */
   
   @keyframes fadeIn {
