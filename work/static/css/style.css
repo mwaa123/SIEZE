@@ -1,4 +1,4 @@
-/* html, body {
+html, body {
     overflow: hidden;
     background: #CCB7B0;
   }
@@ -57,7 +57,7 @@
     background-repeat: repeat;
     z-index: 2;
   }
-  #dot:before {
+  /* #dot:before {
     content: "";
     position: absolute;
     height: 200px;
@@ -114,7 +114,7 @@
     width: 80px;
     top: 500px;
     left: -145px;
-  }
+  } */
   /* Keyframes */
   
   @keyframes fadeIn {
@@ -123,5 +123,5 @@
     }
     100% {
       opacity: 1;
-    } */
+    }
   }
