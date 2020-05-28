@@ -6,3 +6,11 @@ from django.http  import HttpResponse,Http404
 def welcome(request):
     
     return render(request,'fold/welcome.html')
+
+def about(request):
+    
+    return render(request,'fold/about.html')
+
+def pic(request):
+    
+    return render(request,'fold/pic.html')
