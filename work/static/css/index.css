@@ -1,0 +1,715 @@
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+}
+h1 {
+    line-height: .95;
+    color: black;
+    font-weight: 800;
+    font-size: 120px;
+    text-transform: uppercase;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+  }
+  #about {
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  
+  #about .desc {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.87);
+  }
+  
+  .icon-me {
+    text-align: center;
+    font-size: 5em;
+    color: rgba(200, 100, 100, 0.7);
+    padding-top: 20px;
+    padding-bottom: 25px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.30);
+  }
+  
+  .icon-contact {
+    text-align: center;
+    font-size: 7.5em;
+    color: rgba(152, 110, 110, 0.4);
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+  }
+  
+  .icon-contact a {
+    color: rgba(152, 110, 110, 0.4) !important;
+  }
+  
+  #portfolio {
+    background-color: #f6f6f6;
+    width: 100vw;
+    max-width: 1000px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  
+  #portfolio .desc {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  
+  
+  .tagline1 {
+    font-family: 'lato', sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+    font-style: italic;
+    color: #bbb;
+    text-align: left;
+    padding-top: 70px;
+    text-shadow: 1px 1px black;
+  }
+  
+  .tagline2 {
+    font-family: 'lato', sans-serif;
+    font-size: 7em;
+    letter-spacing: 7px;
+    line-height: 0.95em;
+    font-weight: 100;
+    color: white;
+    text-align: left;
+    text-shadow: 1px 1px black;
+    padding-top: 10px;
+  }
+  
+  .tagline3a, .tagline3b, .tagline3c {
+    font-size: 1.75em;
+    font-style: italic;
+    color: #666;
+    text-align: left;
+    line-height: 1em;
+    text-shadow: 1px 1px black;
+  }
+  
+  .tagline3a {
+    padding-top: 50px;
+  }
+  
+  .tagline3b {
+    padding-left: 30px;
+  }
+  
+  .line {
+    height: 3px;
+    width: 100px;
+    position: relative;
+    top: -12px;
+    display: inline-block;
+    background-color: #999;
+  }
+  
+  .line.about {
+    background-color: rgba(0, 0, 0, 0.54);
+  }
+  
+  .line.portfolio {
+    background-color: rgba(0, 0, 0, 0.54);
+  }
+  
+  .line.contact {
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+  
+  .section-title {
+    /* font-family: 'lato', sans-serif; */
+    font-size: 3.5em;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    padding-top: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .section-title.about {
+    color: rgba(0, 0, 0, 0.54);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.75);
+  } 
+
+
+
+/* on the cards */
+a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero Unit ----------------------*/
+  .hero-unit {
+    height: 640px;
+    background: url(https://static.pexels.com/photos/2884/building-vintage-bike-monument.jpg) no-repeat center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+  .hero-unit h1,
+  .hero-unit h2,
+  .hero-unit h3,
+  .hero-unit h4,
+  .hero-unit h5,
+  .hero-unit h6 {
+    margin-top: -0.5rem;
+    margin-bottom: 0;
+    color: white;
+  }
+  .hero-unit h1 {
+    font-weight: bold;
+  }
+  .hero-unit hgroup {
+    margin: 3rem 0;
+  }
+  .hero-unit .card-icon { /* front of card */
+    display: block;
+    margin: 0.5rem auto 0;
+    font-size: 2rem;
+    color: white;
+  }
+  .hero-unit .clients {
+    margin: 2rem auto;
+  }
+  .hero-unit .clients a {
+    color: white;
+  }
+  .clients .fa-stack-2x {
+    color: gray;
+  }
+  .clients:hover .fa-stack-2x {
+    color: #333333;
+  }
+  
+  /* Card design - front */
+  .button.large {
+    margin: 0;
+    padding: 3.25rem;
+  }
+  .button.large a {
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 100;
+    margin-top: 2rem;
+  }
+  
+  /* Card design - back */
+  .panel i {
+    font-size: 2rem;
+    display: block;
+    float: left;
+    width: 20%;
+    opacity: 0.5;
+  }
+  .panel a, 
+  .panel p, 
+  .panel small {
+    width: 80%;
+    float: right;
+  }
+  .panel a {
+    margin-bottom: 0.5rem;
+  }
+  .panel a:hover {
+    text-decoration: underline;
+  }
+  .panel small {
+    margin-top: -0.5rem;
+    font-style: italic;
+  }
+  
+  /* Buttons Card Flipper 
+   * Source: https://cssdeck.com/labs/rxcleo5w
+   */
+  .flip-cards {
+    float: left;
+    width: 100%;
+    height: 100%;
+    padding-left: 1rem;
+  }
+  
+  .flip-cards li {
+    float: left;
+    width: 33.3%;
+    height: 180px;
+    position: relative;
+    padding: 0;
+  }
+  
+  .flip-cards li:hover {
+    cursor: pointer;
+  }
+  
+  .flip-cards li:hover .card-front {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform: perspective(1000) rotateY(180deg);
+    -moz-transform: perspective(1000) rotateY(180deg);
+    -ms-transform: perspective(1000) rotateY(180deg);
+    -o-transform: perspective(1000) rotateY(180deg);
+    transform: perspective(1000) rotateY(180deg);
+  }
+  
+  .flip-cards li:hover .card-back {
+    z-index: 950;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform: perspective(1000) rotateY(0deg);
+    -moz-transform: perspective(1000) rotateY(0deg);
+    -ms-transform: perspective(1000) rotateY(0deg);
+    -o-transform: perspective(1000) rotateY(0deg);
+    transform: perspective(1000) rotateY(0deg);
+  }
+  
+  .flip-cards .card-front,
+  .flip-cards .card-back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 0.6s;
+    -moz-transition: -moz-transform 0.6s;
+    -o-transition: -o-transform 0.6s;
+    transition: transform 0.6s;
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .flip-cards .card-front {
+    -webkit-transform: perspective(1000) rotateY(0);
+    -moz-transform: perspective(1000) rotateY(0);
+    -ms-transform: perspective(1000) rotateY(0);
+    -o-transform: perspective(1000) rotateY(0);
+    transform: perspective(1000) rotateY(0);
+    z-index: 900;
+  }
+  
+  .flip-cards .card-back {
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    z-index: 800;
+  }
+  
+  /* Button Card Colors */
+  .flip-cards .panel {
+    border: none;
+  }
+  
+  .flip-cards .panel i,
+  .flip-cards .panel p,
+  .flip-cards .panel a,
+  .flip-cards .panel small {
+    color: white;
+  }
+  
+  /* First button color */
+  .flip-cards li:first-child > .button {
+    background-color: rgba(40, 57, 77, 0.8);
+  }
+  .flip-cards li:first-child > .panel {
+    background-color: rgba(40, 57, 77, 1);
+  }
+  
+  /* Second button color */
+  .flip-cards li:nth-child(2) > .button {
+    background-color: rgba(109, 193, 202, 0.8);
+  }
+  .flip-cards li:nth-child(2) > .panel {
+    background-color: rgb(37, 195, 212);
+  }
+  
+  /* Third button color */
+  .flip-cards li:nth-child(3) > .button {
+    background-color: blue;
+  }
+  .flip-cards li:nth-child(3) > .panel {
+    background-color: lightseagreen;
+  }
+  
+  /* Fourth button color */
+  .flip-cards li:nth-child(4) > .button {
+    background-color: rgba(235, 167, 36, 0.8);
+  }
+  .flip-cards li:nth-child(4) > .panel {
+    background-color: rgba(235, 167, 36, 1);
+  }
+  
+  /* Fifth button color */
+  .flip-cards li:nth-child(5) > .button {
+    background-color: rgba(75, 135, 150, 0.8);
+  }
+  .flip-cards li:nth-child(5) > .panel {
+    background-color: rgba(75, 135, 150, 1);
+  }
+  
+  /* Sixth (last) button color */
+  .flip-cards li:last-child > .button {
+    background-color: rgba(100, 66, 87, 0.8);
+  }
+  .flip-cards li:last-child > .panel {
+    background-color: rgba(100, 66, 87, 1);
+    color: white;
+  }
+  
+  /*
+   * RESPONSIVENESS -------------------------------------------------
+   */
+  @media only screen and ( max-width: 40em ) {
+      .hero-unit {
+          height: 800px;
+      }
+      .flip-cards li {
+          width: 50%;
+          /*height: 160px;*/
+      }
+  }
+  @media only screen and ( max-width: 30em ) {
+      .hero-unit h1 {
+          font-size: 1.75rem;
+      }
+      .hero-unit h3 {
+          font-size: 1.125rem;
+      }
+  }
+  @media only screen and ( max-width: 25em ) {
+      .hero-unit {
+          height: 920px;
+      }
+      .hero-unit hgroup {
+          margin: 2rem 0;
+      }
+      .hero-unit h1 {
+          font-size: 1.35rem;
+          padding-bottom: 0.25rem;
+      }
+      .hero-unit h3 {
+          font-size: 0.85rem;
+      }
+      .hero-unit .card-icon {
+          font-size: 1.35rem;
+      }
+      .hero-unit .card-back .card-icon {
+          font-size: 2rem;
+          margin: 0;
+          padding: 5px 0 20px 5px;
+      }
+      .flip-cards li {
+          width: 100%;
+          font-size: 1.35rem;
+          height: 120px;
+      }
+      .flip-cards .panel p {
+          display: none;	
+      }
+      .flip-cards .panel small {
+          margin: 0;
+      }
+      .button.large {
+          padding: 2rem;
+      }
+      .button.large a {
+          font-size: 1.35rem;
+      }
+  }
+
+
+
+
+
+
+
+
+
+  /* contact */
+  body {
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  #contact {
+    width: 100%;
+    height: 100vh;
+    background-color: #111;
+    overflow: hidden;
+    padding-bottom: 200px;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    font: 300 60px 'Oswald', sans-serif;
+    letter-spacing: 6px;
+    color: #fff;
+    margin-bottom: 25px;
+  }
+  
+  .contact-wrapper {
+    margin: 0 auto;
+    padding-top: 20px;
+    position: relative;
+    max-width: 800px;
+  }
+  
+  /* Begin Left Contact Page */
+  .form-horizontal {
+    float: left;
+    max-width: 400px;
+    font-family: 'Lato';
+    font-weight: 400;
+  }
+  
+  .form-control, textarea {
+    max-width: 400px;
+    background-color: #111;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+  
+  .send-button {
+    margin-top: 15px;
+    height: 34px;
+    width: 400px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+  }
+  
+  .button {
+    width: 400px;
+    height: 34px;
+    transition: all .2s ease-in-out;
+  }
+  
+  .send-text {
+    display: block;
+    margin-top: 10px;
+    font: 300 14px 'Lato', sans-serif;
+    letter-spacing: 2px;
+  }
+  
+  .button:hover {
+    transform: translate3d(0px, -29px, 0px);
+  }
+  
+  /* Begin Right Contact Page */
+  .direct-contact-container {
+    max-width: 400px;
+    float: right;
+    margin-top: 5px;
+  }
+  
+  /* Location, Phone, Email Section */
+  .contact-list {
+    list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px;
+  }
+  
+  .list-item {
+    line-height: 4;
+    color: #aaa;
+  }
+  
+  .contact-text {
+    font: 300 18px 'Lato', sans-serif;
+    letter-spacing: 1.9px;
+    color: #bbb;
+  }
+  
+  .place {
+    margin-left: 62px;
+  }
+  
+  .phone {
+    margin-left: 56px;
+  }
+  
+  .gmail {
+    margin-left: 53px;
+  }
+  
+  .contact-text a {
+    color: #bbb;
+    text-decoration: none;
+    transition-duration: 0.2s;
+  }
+  
+  .contact-text a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+  /* Social Media Icons */
+  .social-media-list {
+    position: relative;
+    font-size: 2.3rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .social-media-list li a {
+    color: #fff;
+  }
+  
+  .social-media-list li {
+    position: relative; 
+    top: 0;
+    left: -20px;
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    margin: 10px auto;
+    line-height: 70px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: lightseagreen;
+    cursor: pointer; 
+    transition: all .2s ease-in-out;
+  }
+  
+  .social-media-list li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px #fff;
+    transition: all .2s ease-in-out;
+  }
+  
+  .social-media-list li:hover {
+    background-color: #fff; 
+  }
+  
+  .social-media-list li:hover:after {
+    opacity: 1;  
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+  }
+  
+  .social-media-list li:hover a {
+    color:blue;
+  }
+  
+  .copyright {
+    font: 200 14px 'Oswald', sans-serif;
+    color: #555;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  
+  hr {
+    border-color: rgba(255,255,255,.8); ;
+  }
+  
+  /* Begin Media Queries*/
+  @media screen and (max-width: 760px) {
+      #contact {
+          height: 1000px;
+      }
+    .section-header {
+      font-size: 65px;
+    }
+    .direct-contact-container, .form-horizontal {
+      float: none;
+      margin: 10px auto;
+    }  
+    .direct-contact-container {
+      margin-top: 60px;
+      max-width: 300px;
+    }    
+    .social-media-list li {
+      height: 60px;
+      width: 60px;
+      line-height: 60px;
+    }
+    .social-media-list li:after {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+    }
+  }
+  
+  @media screen and (max-width: 569px) {
+    #contact {
+      height: 1200px;
+      }
+    .section-header{
+      font-size: 50px;
+    }
+    .direct-contact-container, .form-wrapper {
+      float: none;
+      margin: 0 auto;
+    }  
+    .form-control, textarea {
+      max-width: 340px;
+      margin: 0 auto;
+    }
+    
+    .name, .email, textarea {
+      width: 280px;
+    } 
+    .direct-contact-container {
+      margin-top: 60px;
+      max-width: 280px;
+    }  
+    .social-media-list {
+      left: 0;
+    }
+    .social-media-list li {
+      height: 55px;
+      width: 55px;
+      line-height: 55px;
+      font-size: 2rem;
+    }
+    .social-media-list li:after {
+      width: 55px;
+      height: 55px;
+      line-height: 55px;
+    }
+    
+  }
+  
+  @media screen and (max-width: 410px) {
+    .send-button {
+      width: 99%;
+    }
+  }
+
+

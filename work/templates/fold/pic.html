@@ -1,0 +1,16 @@
+{%extends 'fold/base.html'%}
+{% load bootstrap3 %}
+{% load static%}
+{% block content %}
+{{block.super}}
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Playfair+Display+SC" rel="stylesheet">
+{% block styles %}
+{% bootstrap_css %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+<div>
+    <video autoplay muted loop id="myVideo" style="display: block;margin:0 auto;">
+        <source src="{% static 'images/safe.mp4'%}" type="video/mp4">
+    </video>
+</div>
+{% endblock %}
